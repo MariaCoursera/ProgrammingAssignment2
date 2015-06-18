@@ -24,6 +24,12 @@ options(digits=4)
   c4 <- c(15,16,17,18)
   TestMatrix3 <- rbind(c1,c2,c3,c4)
 
+quick_check <- function(x=matrix()) {
+  message (x$getmean())
+  message(x$get_inverse())
+  x$get()
+}
+
 
 ## Test scenarios...
 
